@@ -1,7 +1,8 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 body {
@@ -33,7 +34,8 @@ header::before {
 	width: inherit;
 	height: inherit;
 	background: inherit;
-	filter: url(#blurfilter);
+	-webkit-filter: url(#blurfilter);
+	        filter: url(#blurfilter);
 }
 
 header::after {
@@ -49,9 +51,16 @@ header::after {
 
 main {
 	margin-bottom: 50px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 
 main::before {
